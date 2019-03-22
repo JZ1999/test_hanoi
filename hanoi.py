@@ -19,7 +19,6 @@ def operacion(col,n):
     return res
 
 def puedeMoverse(col1, col2):
-    print(col1,col2)
     if len(col1)==0: 
         col1.insert(0,col2.pop(0))
     elif len(col2)==0:
@@ -33,9 +32,9 @@ def puedeMoverse(col1, col2):
 def imprimir(col):
     out = ""
     out+="\n=======\n"
-    out+="\nBorigen "+str(col[0])+"\n"
+    out+="\nBorigen "+str(col[2])+"\n"
     out+="\nBcentro "+str(col[1])+"\n"
-    out+="\nBdestino "+str(col[2])+"\n"
+    out+="\nBdestino "+str(col[0])+"\n"
     out+="\n=======\n"
     return out
 
